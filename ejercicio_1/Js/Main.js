@@ -71,24 +71,95 @@
         }
 
 
-/*Variba*/ 
+/*pregunta 7*/
+    /*let diaSemana = prompt(`Ingrese el dia de la semana: ("Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo)`);
+
+        if(diaSemana === "Lunes" || diaSemana === "lunes"){
+            console.log(`No ganaste, lo siento :'(`);
+            }else if(diaSemana === "Martes" || diaSemana === "martes"){
+                console.log(`Uff casi ganas!!`);
+            }else if(diaSemana === "Miercoles" || diaSemana === "miercoles"){
+                console.log(`No Aun no, pero estas serca`);
+            }else if(diaSemana === "Jueves" || diaSemana === "jueves"){
+                console.log(`¡Tan serca pero tan lejos!`);
+            }else if(diaSemana === "Viernes" || diaSemana === "viernes"){
+                console.log(`Ganaste!!! :D `);
+            }else if(diaSemana === "Sabado" || diaSemana === "sabado"){
+                console.log(`Creo que te alejaste un poco :S`);
+            }else if(diaSemana === "Domingo" || diaSemana === "domingo"){
+                console.log(`No, este no es!`);
+            }else{
+                console.log(`Estas seguro que leiste bien?`);
+            }
+
+/*Pregunta 8*/
+    /*let nota = prompt(`Digite la nota del estudiante: `);
+
+        if(nota > 0 && nota < 11 ){
+            if(nota < 6){
+                console.log(`Reprobado`);
+            }else if(nota >= 6 && nota <= 8 ){
+                console.log(`Regular`);
+            }else if(nota == 9){
+                console.log(`Bien`);
+            }else if(nota == 10){
+                console.log(`Excelente`);
+            }
+        }else{
+            alert(`¡Error! Nota fuera de los rangos establecidos, Intente nuevamente.`);
+        }
+
+/*Pregunta 9*/
+/*let costoTopping = prompt(`Porfavor seleccione el topping que desea en su helado:
+1. Sin topping
+2. Topping de Oreo
+3. Topping de KitKat
+4. topping de Brownie
+`)
+        if(costoTopping == 1 || costoTopping === "Sin topping" || costoTopping === "Sin Topping" || costoTopping === "sin topping"){
+            alert(`El costo es de: 50 MXN`);
+        }else if(costoTopping == 2 || costoTopping === "Topping de oreo" || costoTopping === "Topping De Oreo" || costoTopping === "topping de oreo" || costoTopping === "Topping de Oreo" || costoTopping === "topping De oreo"){
+            alert(`El costo es de: 60 MXN `);
+        }else if(costoTopping == 3 || costoTopping === "Topping de kitkat" || costoTopping === "Topping De KitKat" || costoTopping === "topping de kitkat" || costoTopping === "Topping de Kitkat" || costoTopping === "topping De Kitkat"){
+            alert(`El costo es de: 65 MXN`);
+        }else if(costoTopping == 4 || costoTopping === "Topping de brownie" || costoTopping === "Topping De Brownie" || costoTopping === "topping de brownie" || costoTopping === "Topping de Brownie" || costoTopping === "topping De brownie"){
+            alert(`El costo es de: 70 MXN`);
+        }else{
+            alert(`Seleccion errada, intente denuevo`);
+        }
+
+/*pregunta 10*/
+let course = 4999;
+let carrera = 3999;
+let master = 2999;
+let descuentoFacebook = 0.20;
+let descuentoGoogle = 0.15;
+let descuentoJesua = 0.50;
+let tiempoCourse = 2;
+let tiempoCarrera = 6;
+let tiempoMaster = 12;
+
+let carreraUni = prompt(`Porfavor seleccione una de las 3 distintas opciones que tenemos en el momento:
+(Digite el numero correspondiente a la carrera)
+1. Course
+2. Carrera
+3. Master
+`);
+        if(carreraUni == 1 ){
+            alert(`El costo del curso es de $${course} MXN`);
+            let beca = prompt(`¿Cuenta usted con alguna de estas becas?
+            (Digite el numero correspondiente a la carrera)
+            1. Beca facebook
+            2. Beca Google
+            3. Beca Jesua
+            `);
+            if(beca == 1){
+                
+                alert(`el precio es 2000 Mxn
+                El precio de la opcion que tomaste en total seria de 4000 por la duracion del curso (2meses)
+                `);
+                
+            }
+        }
 
 /*Variba*/ 
-
-/*Variba*/ 
-
-/*Variba*/ 
-
-/*Variba*/ 
-
-
-
-/*let nombre = "";
-let apellido = "";
-
-
-nombre = prompt("ingresa tu nombre");
-console.log(`El nombre ingresado es: ${nombre}.`);
-
-apellido = prompt("ingresa tu apellido");
-console.log(`El apellido ingresado es: ${apellido}.`);*/
