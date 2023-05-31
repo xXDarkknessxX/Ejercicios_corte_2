@@ -129,7 +129,7 @@
         }
 
 /*pregunta 10*/
-let course = 4999;
+/*let course = 4999;
 let carrera = 3999;
 let master = 2999;
 let descuentoFacebook = 20;
@@ -178,6 +178,8 @@ let carreraUni = prompt(`Porfavor seleccione una de las 3 distintas opciones que
                 El precio de la opcion que tomaste en total seria de ($`+  course * tiempoCourse + ` MXN)por la duracion del curso (`+ tiempoCourse + ` meses)
                 `);
 
+            }else{
+                alert(`El dato ingresado es incorrecto, intente denuevo`)
             }
         }else if(carreraUni == 2 ){
 
@@ -213,8 +215,50 @@ let carreraUni = prompt(`Porfavor seleccione una de las 3 distintas opciones que
                 El precio de la opcion que tomaste en total seria de ($`+  carrera * tiempoCourse + ` MXN)por la duracion del curso (`+ tiempoCarrera + ` meses)
                 `);
 
+            }else{
+                alert(`El dato ingresado es incorrecto, intente denuevo`)
             }
             
+        }else if(carreraUni == 3 ){
+
+            alert(`El costo del curso es de $${master} MXN`);
+            let beca = prompt(`¿Cuenta usted con alguna de estas becas?
+            (Digite el numero correspondiente a la carrera)
+            1. Beca facebook
+            2. Beca Google
+            3. Beca Jesua
+            4. Ninguna
+            `);
+            if(beca == 1){
+                
+                alert(`el precio es ($${master} MXN)
+                El precio de la opcion que tomaste en total seria de ($`+ ((( master * descuentoFacebook) * tiempoMaster)/100)+ ` MXN)por la duracion del curso (`+ tiempoMaster + ` meses)
+                `);
+                
+            }else if (beca == 2){
+
+                alert(`el precio es $ ${master} Mxn
+                El precio de la opcion que tomaste en total seria de ($`+ ((( master * descuentoGoogle) * tiempoMaster)/100)+ ` MXN)por la duracion del curso (`+ tiempoMaster + ` meses)
+                `);
+
+            }else if (beca == 3){
+
+                alert(`el precio es $ ${master} Mxn
+                El precio de la opcion que tomaste en total seria de ($`+ ((( master * descuentoJesua ) * tiempoMaster)/100)+ ` MXN)por la duracion del curso (`+ tiempoMaster + ` meses)
+                `);
+
+            }else if (beca == 4){
+
+                alert(`el precio es $ ${master} Mxn
+                El precio de la opcion que tomaste en total seria de ($`+  master * tiempoMaster + ` MXN)por la duracion del curso (`+ tiempoMaster + ` meses)
+                `);
+
+            }else{
+                alert(`El dato ingresado es incorrecto, intente denuevo`)
+            }
+            
+        }else{
+            alert(`El dato ingresado es incorrecto, intente denuevo`)
         }
 
 /*Variba*/ 
