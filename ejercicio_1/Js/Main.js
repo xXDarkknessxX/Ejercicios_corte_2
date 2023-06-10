@@ -269,6 +269,7 @@ let valorMenoraCien = 5;
 let valorMayoraCien = 10;
 
 
+
 let tipoCoche = prompt(`Porfavor seleccione el tipo de vehiculo:
 (Digite el numero correspondiente a al vehiculo)
 1. coche
@@ -278,18 +279,40 @@ let tipoCoche = prompt(`Porfavor seleccione el tipo de vehiculo:
         if(tipoCoche == 1 ){
             alert(`El costo por kilometro recorrido es de $${coche}`);
             let kilometrosRecorridos = prompt(`Porfavor digite la cantidad de kilometros recorridos`);
-            if(kilometrosRecorridos >= 100){
+            let total = (coche * kilometrosRecorridos) + valorMenoraCien;
+            let total1 = (coche * kilometrosRecorridos) + valorMayoraCien;
+            if(kilometrosRecorridos <= 100){
                 
-                alert(`el precio es ($`(coche*kilometrosRecorridos+valorMenoraCien`MXN)
-                El precio de la opcion que tomaste en total seria de ($`+ ((( course * descuentoFacebook) * tiempoCourse)/100)+ ` MXN)por la duracion del curso (`+ tiempoCourse + ` meses)
-                `));
+                alert(`el precio por menos de 100klm es: ($${total})`);
                 
             }else{ 
-
-                alert(`el precio es ($`(coche*kilometrosRecorridos+valorMayoraCien`MXN)
-                El precio de la opcion que tomaste en total seria de ($`+ ((( course * descuentoFacebook) * tiempoCourse)/100)+ ` MXN)por la duracion del curso (`+ tiempoCourse + ` meses)
-                `));
-
+                alert(`el precio por mas de 100klm es: ($${total1})`);
             }
+        }else if(tipoCoche == 2){
+            alert(`El costo por kilometro recorrido es de $${moto}`);
+            let kilometrosRecorridos = prompt(`Porfavor digite la cantidad de kilometros recorridos`);
+            let total = (moto * kilometrosRecorridos) + valorMenoraCien;
+            let total1 = (moto * kilometrosRecorridos) + valorMayoraCien;
+            if(kilometrosRecorridos <= 100){
+                
+                alert(`el precio por menos de 100klm es: ($${total})`);
+                
+            }else{ 
+                alert(`el precio por mas de 100klm es: ($${total1})`);
+            }
+        }else if(tipoCoche == 3){
+            alert(`El costo por kilometro recorrido es de $${autoBus}`);
+            let kilometrosRecorridos = prompt(`Porfavor digite la cantidad de kilometros recorridos`);
+            let total = (autoBus * kilometrosRecorridos) + valorMenoraCien;
+            let total1 = (autoBus * kilometrosRecorridos) + valorMayoraCien;
+            if(kilometrosRecorridos <= 100){
+                
+                alert(`el precio por menos de 100klm es: ($${total})`);
+                
+            }else{ 
+                alert(`el precio por mas de 100klm es: ($${total1})`);
+            }
+        }else{
+            alert(`digito un dato erroneo, intente de nuevo`)
         }
 
