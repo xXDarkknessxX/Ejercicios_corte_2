@@ -261,4 +261,35 @@ let carreraUni = prompt(`Porfavor seleccione una de las 3 distintas opciones que
             alert(`El dato ingresado es incorrecto, intente denuevo`)
         }
 
-/*Variba*/ 
+/*pregunta 11*/ 
+let coche = 0.20;
+let moto = 0.10;
+let autoBus = 0.5;
+let valorMenoraCien = 5;
+let valorMayoraCien = 10;
+
+
+let tipoCoche = prompt(`Porfavor seleccione el tipo de vehiculo:
+(Digite el numero correspondiente a al vehiculo)
+1. coche
+2. moto
+3. autobus
+`);
+        if(tipoCoche == 1 ){
+            alert(`El costo por kilometro recorrido es de $${coche}`);
+            let kilometrosRecorridos = prompt(`Porfavor digite la cantidad de kilometros recorridos`);
+            if(kilometrosRecorridos >= 100){
+                
+                alert(`el precio es ($`(coche*kilometrosRecorridos+valorMenoraCien`MXN)
+                El precio de la opcion que tomaste en total seria de ($`+ ((( course * descuentoFacebook) * tiempoCourse)/100)+ ` MXN)por la duracion del curso (`+ tiempoCourse + ` meses)
+                `));
+                
+            }else{ 
+
+                alert(`el precio es ($`(coche*kilometrosRecorridos+valorMayoraCien`MXN)
+                El precio de la opcion que tomaste en total seria de ($`+ ((( course * descuentoFacebook) * tiempoCourse)/100)+ ` MXN)por la duracion del curso (`+ tiempoCourse + ` meses)
+                `));
+
+            }
+        }
+
