@@ -36,7 +36,7 @@ if (!isNaN(numero1) && !isNaN(numero2) && numero1 >= 1 && numero1 <= 50 && numer
 /*ejercicio 3 */
 
 // Declarar un arreglo para almacenar los números
-const numeros = [];
+/*const numeros = [];
 
 let numero = parseInt(prompt("Introduce un número (ingresa 0 para terminar):"));
 
