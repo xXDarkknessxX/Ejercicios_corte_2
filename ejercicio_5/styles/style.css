@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    font-size: 12px;
+}
+body{
+    background-image: linear-gradient(to right, green, rgb(59, 108, 178));
+}
+body section{
+    display: flex;
+    justify-content: center;
+}
+
+body img{
+    display: flex;
+    width: 250px;
+    height: auto;
+    align-self: center;
+    align-items: center;
+}
