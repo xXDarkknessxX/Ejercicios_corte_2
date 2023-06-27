@@ -8,40 +8,28 @@
 </head>
 <body>
     <main>
-        <h1>Empleado del mes</h1>
-        <section>
-            
-            <form action="" id="formJuana">
-                <li>
-                    <ul>
-                        <select name="productosJuana" id="productosJuana">
-                            <option value="1">Aqua</option>
-                            <option value="2">Emocion</option>
-                            <option value="3">Alegria</option>
-                            <option value="4">Frescura</option>
-                        </select>
-                        <input type="text" id="cantidad_juana" placeholder="Cantidad"> 
-                        <input type="submit" id="juana">
-                    </ul>
-                </li>
-            </form>
-            
-            <form action="" id="formPedro">
-                <li>
-                    <ul>
-                        <select name="ProductosPedro" id="ProductosPedro">
-                            <option value="1">Aqua</option>
-                            <option value="2">Emocion</option>
-                            <option value="3">Alegria</option>
-                            <option value="4">Frescura</option>
-                        </select>
-                        <input type="text" id="cantidad_pedro" placeholder="cantidad"> 
-                        <input type="submit" id="pedro">
-                    </ul>
-                </li>
-            
-            </form>
-        </section>
+        <h2>Registrar Ventas</h2>
+  <label for="vendedor">Vendedor:</label>
+  <select id="vendedor">
+    <option value="Juana">Juana</option>
+    <option value="Pedro">Pedro</option>
+  </select>
+
+  <label for="producto">Producto:</label>
+  <select id="producto">
+    <option value="Aqua">Aqua</option>
+    <option value="Emoción">Emoción</option>
+    <option value="Alegría">Alegría</option>
+    <option value="Frescura">Frescura</option>
+  </select>
+
+  <label for="cantidad">Cantidad:</label>
+  <input type="text" id="cantidad">
+
+  <button onclick="registrarVenta()">Registrar Venta</button>
+
+  <h2>Resultados</h2>
+  <button onclick="calcularResultados()">Calcular Resultados</button>
     </main>
 </body>
 </html>
